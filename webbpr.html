@@ -1,0 +1,12 @@
+<!doctypehtml><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><style>#slider-container{width:100%;overflow:hidden;position:relative}#slider{display:flex;transition:transform .5s ease-in-out}.slide{min-width:100%;box-sizing:border-box;padding:5px;background-color:#ff0;text-align:center}.slide a{text-decoration:none;font-family:"Trebuchet MS";font-size:13px}</style><div id=slider-container><div id=slider><div class=slide><a href=https://www.perbarindodpdjateng.or.id/1 target=_blank>klik <b>INFO DETAIL BPR-BPRS</b></a></div><div class=slide><a href=https://www.perbarindodpdjateng.or.id/website-bpr-bprs-di-jateng target=_blank>klik <b>CARI WEBSITE BPR-BPRS SE-JATENG</b></a></div><div class=slide><a href="https://www.google.com/maps/search/BPR-BPRS+TERDEKAT/@-6.9354553,110.0443081,11z/data=!4m2!2m1!6e2?entry=ttu"target=_blank>klik <b>CARI BPR-BPRS TERDEKAT</b></a></div></div></div><script defer>let currentIndex = 0;
+        function slideTo(slideIndex) {
+            const slider = document.getElementById('slider');
+            const slideWidth = slider.children[0].offsetWidth;
+            slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+        }
+        function autoSlide() {
+            const slides = document.querySelectorAll('.slide');
+            currentIndex = (currentIndex + 1) % slides.length;
+            slideTo(currentIndex);
+        }
+        setInterval(autoSlide, 3000);</script>
